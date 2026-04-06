@@ -18,8 +18,8 @@ def compute_distance(p1, p2):
 
 # ===== GIAO DIỆN BÊN TRÁI (SIDEBAR) =====
 st.sidebar.header("Cài đặt thông số")
-x_test = st.sidebar.slider("Tọa độ X của điểm Test", 0.0, 10.0, 5.0)
-y_test = st.sidebar.slider("Tọa độ Y của điểm Test", 0.0, 10.0, 5.0)
+x_test = st.sidebar.slider("Tọa độ X của điểm Test", 0.0, 100.0, 5.0)
+y_test = st.sidebar.slider("Tọa độ Y của điểm Test", 0.0, 100.0, 5.0)
 k = st.sidebar.number_input("Giá trị K (số láng giềng)", min_value=1, max_value=10, value=3)
 
 new_point = (x_test, y_test)
